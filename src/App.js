@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import Contact from "./components/pages/Contact";
-import Layout from "./components/pages/Layout";
-import Login from "./components/pages/auth/Login";
-import Register from "./components/pages/auth/Register";
-import SendPasswordResetEmail from "./components/pages/auth/SendPasswordResetEmail";
-import ResetPassword from "./components/pages/auth/ResetPassword";
-import ChangePassword from "./components/pages/auth/ChangePassword";
-import UserProfile from "./components/pages/auth/UserProfile";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Layout from "./pages/Layout";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
+import SendPasswordResetEmail from "./pages/auth/SendPasswordResetEmail";
+import ResetPassword from "./pages/auth/ResetPassword";
+import ChangePassword from "./pages/auth/ChangePassword";
+import UserProfile from "./pages/auth/UserProfile";
 
 function App() {
   return (
