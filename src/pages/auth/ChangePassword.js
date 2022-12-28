@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 const ChangePassword = () => {
@@ -24,6 +25,10 @@ const ChangePassword = () => {
             console.log("All Fields are Required");
         }
     }
+
+const myData = useSelector(state => state.user)
+console.log("Changed Password", myData)
+
   return (
     <>
     <h1>Change Password Page</h1>
