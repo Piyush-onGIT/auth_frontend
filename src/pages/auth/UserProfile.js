@@ -1,10 +1,15 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { unSetUserToken } from '../../features/authSlice'
+import { removeToken } from '../../services/LocalStorageService'
 
 const UserProfile = () => {
     const navigate = useNavigate()
+    const dispatch = useDispatch()
     const handleLogout = () => {
-        console.log("Logout Clicked");
+        dispatch(unSetUserToken({access_token: null}))
+        removeToken()
         navigate('/login')
     }
     const handleChangePassword = () => {
