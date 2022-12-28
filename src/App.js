@@ -22,7 +22,7 @@ function App() {
           <Route path="login" element={!access_token ?<Login/>:<Navigate to="/user-profile"/>} />
           <Route path="register" element={!access_token?<Register/>:<Navigate to="/user-profile"/>} />
           <Route path="forgot-password" element={<SendPasswordResetEmail/>} />
-          <Route path="password-reset" element={<ResetPassword/>} />
+          <Route path="api/user/reset-password/:id/:token" element={<ResetPassword/>} />
           <Route path="change-password" element={access_token?<ChangePassword/>:<Navigate to="/login"/>} />
           <Route path="user-profile" element={access_token?<UserProfile/>:<Navigate to="/login"/>} />
         </Route>

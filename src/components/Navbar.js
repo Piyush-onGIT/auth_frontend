@@ -7,6 +7,7 @@ const Navbar = () => {
   return (
     <>
     <h1>Navbar</h1>
+    <div style={{display: "flex", justifyContent:"space-evenly"}}>
     <NavLink to="/">Home</NavLink>
     <NavLink to="/contact">Contact</NavLink>
 
@@ -20,6 +21,7 @@ const Navbar = () => {
         <NavLink to="/register">Register</NavLink>
     </>
     }
+    </div>
 
     <hr />
     </>
